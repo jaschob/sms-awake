@@ -2,4 +2,13 @@
 <resources>
     
     <string name="app_name">SmsAwake Settings</string>
+    <string name="timeout">Screen Timeout</string>
+    <string name="ignored_description">Comma separated list of phone numbers to not turn screen on for</string>
+    <string name="ignored">Ignored Numbers</string>
+    <string name="timeout_description">Length in seconds to attempt to keep the screen on</string>
+    <string name="ignore_on">on</string>
+    <string name="ignore_off">off</string>
+    <string name="ignore_on_summary">Selected numbers will not wake device</string>
+    <string name="ignore_off_summary">All incoming messages will wake device</string>
+    <string name="ignore_toggle">Ignore Function</string>
 </resources>

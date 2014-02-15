@@ -6,9 +6,27 @@
 
 <EditTextPreference
 	android:key="timeout" 
-	android:title="Screen timeout"
-	android:numeric="integer"
+	android:title="@string/timeout"
+	android:inputType="number"
 	android:defaultValue="5"
-	android:summary="Length in seconds to attempt to keep the screen on"/>
-	
+	android:summary="@string/timeout_description"/>
+
+<SwitchPreference
+	android:key="ignore_toggle"
+	android:defaultValue="false"
+	android:title="@string/ignore_toggle"
+	android:disableDependentsState="false"
+	android:switchTextOff="@string/ignore_off"
+	android:summaryOff="@string/ignore_off_summary"
+	android:switchTextOn="@string/ignore_on"
+	android:summaryOn="@string/ignore_on_summary"/>
+
+<EditTextPreference
+	android:key="ignored"
+	android:dependency="ignore_toggle"
+	android:title="@string/ignored"
+	android:inputType="text"
+	android:defaultValue=""
+	android:summary="@string/ignored_description"/>
+
 </PreferenceScreen>

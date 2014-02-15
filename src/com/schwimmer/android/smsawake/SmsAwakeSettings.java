@@ -9,10 +9,9 @@ public class SmsAwakeSettings extends PreferenceActivity {
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		this.addPreferencesFromResource(R.layout.settings);
-
 		PreferenceManager.setDefaultValues(this, R.layout.settings, false);
+		
+		addPreferencesFromResource(R.layout.settings);
 	}
 
 }
